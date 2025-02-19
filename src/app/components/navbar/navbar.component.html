@@ -1,0 +1,46 @@
+<nav class="bg-[#F5F7FA]">
+    <div class="container mx-auto max-w-[1320px] relative h-auto p-10 flex flex-col md:flex-row md:items-center md:justify-between
+    md:h-[80px]">
+        <div>
+            <a href="#">
+                <img src="/img/logo-black.png" alt="logo">
+            </a>
+        </div>
+        <ul [ngClass]="{ 
+            'hidden': !toggle, 
+            'flex': toggle, 
+            'flex-col': true, 
+            'my-5': true, 
+            'md:flex': true,
+            'md:flex-row': true,
+          }">
+            <li class="my-2 md:mx-4"><a href="#">Home</a></li>
+            <li class="my-2 md:mx-4"><a href="#">Service</a></li>
+            <li class="my-2 md:mx-4"><a href="#">Feature</a></li>
+            <li class="my-2 md:mx-4"><a href="#">Product</a></li>
+            <li class="my-2 md:mx-4"><a href="#">Testimonial</a></li>
+            <li class="my-2 md:mx-4"><a href="#">FAQ</a></li>
+        </ul>
+
+        <ul [ngClass]="{ 
+            'hidden': !toggle, 
+            'flex': toggle, 
+            'flex-col': true, 
+            'my-5': true, 
+            'md:flex': true,
+            'md:flex-row': true,
+          }">
+          <!-- <ul class="hidden flex flex-col my-5 md:flex-row"> -->
+            <li class="my-2 md:mx-4"><a class="inline-flex justify-center items-center py-2 px-4 text-[#4CAF4F]"
+                    href="#">Login</a></li>
+            <li class="my-2 md:mx-4"><a
+                    class="inline-flex justify-center items-center py-2 px-4 bg-[#4CAF4F] text-white rounded-md"
+                    href="#">Sign Up</a></li>
+        </ul>
+
+        <!-- Hamburger Icon -->
+        <div class="md:hidden absolute right-5 cursor-pointer ">
+            <i class="fas fa-bars text-black text-xl " (click)="updateToggle()"></i>
+        </div>
+    </div>
+</nav>
