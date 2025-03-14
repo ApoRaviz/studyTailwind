@@ -16,7 +16,7 @@
             "outputPath": "dist/study-tailwinds",
             "index": "src/index.html",
             "browser": "src/main.ts",
-             "baseHref": "/study-tailwinds/",
+            "baseHref": "/studyTailwind/",
             "polyfills": [
               "zone.js"
             ],
@@ -91,9 +91,6 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
