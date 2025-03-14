@@ -1,0 +1,34 @@
+<div class="bg-[#F5F7FA] py-10">
+    <div class="container mx-auto max-w-[1320px] p-10 grid grid-cols-1 md:grid-cols-[2fr_4fr] ">
+        <div>
+            <img src="img/tim-smith.png">
+        </div>
+        <div>
+            <p class="text-[#717171] my-5"> Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem
+                dui, vel rutrum risus
+                tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim.
+                Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi
+                blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget
+                lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat
+                ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh
+                id sem dignissim finibus ac sit amet magna.</p>
+            <h3 class="mt-5 md:mt-0 text-[1.25rem] font-semibold text-[#4CAF4F]">Tim Smith</h3>
+            <p class="text-[#89939E]">
+                British Dragon Boat Racing Association
+            </p>
+            <ul class="flex flex-col items-center md:flex-row justify-between mt-10">
+                <li *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+                    <img [src]="'img/clients/client-0' + i + '.png'" alt="client0{{ i }}">
+                </li>
+                <li>
+                    <a class="text-[#4CAF4F] flex items-center font-bold" href="#">Meet all customers
+                        <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
